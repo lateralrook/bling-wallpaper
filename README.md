@@ -4,9 +4,6 @@ This is a simple Python script that downloads the Bing's daily wallpapers from t
 
 ## How to use
 
-0.  Make sure you have the following dependencies installed:
-- `requests`
-- `Pillow`
 1.  Clone or download this repository
 2.  Run the `wallpaper.py` script
 
@@ -27,6 +24,8 @@ python wallpaper.py
 ## Requirements
 
 - Python 3
+  - `requests`
+  - `Pillow`
 - Internet connection
 
 ## Note
