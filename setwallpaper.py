@@ -1,18 +1,11 @@
 import os
-import sys
-from wallpaper import set_wallpaper
+import glob
+import ctypes
 
-# Path to directory containing images
-image_dir = "path/to/folder"
+def set_wallpaper(img_path):
+    ctypes.windll.user32.SystemParametersInfoW(20, 0, img_path, 0)
 
-# List all files in the directory
-files = os.listdir(image_dir)
-
-# Filter list to only include image files
-image_files = [f for f in files if f.endswith(".jpg") or f.endswith(".jpeg") or f.endswith(".png")]
-
-# Get the most recent image file
-most_recent = max(image_files, key=lambda x: os.path.getctime(os.path.join(image_dir, x)))
-
-# Set the most recent image as the wallpaper
-set_wallpaper(os.path.join(image_dir, most_recent))
+img_folder = r"path/to/folder"
+all_imgs = glob.glob(os.path.join(img_folder, "*.jpg"))
+most_recent_img = max(all_imgs, key=os.path.getctime)
+set_wallpaper(most_recent_img)
