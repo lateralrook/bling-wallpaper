@@ -3,7 +3,7 @@ import sys
 from wallpaper import set_wallpaper
 
 # Path to directory containing images
-image_dir = "C:/Users/gurur/OneDrive/Resimler/BingWallpapers/"
+image_dir = "path/to/folder"
 
 # List all files in the directory
 files = os.listdir(image_dir)
