@@ -6,7 +6,7 @@ A set of scripts to download the daily Bing wallpapers and set the most recent o
 - Downloads the highest quality images available
 - Downloads the daily wallpapers from the last 5 days
 - Saves the images with the date as the file name
-- Easy to use and require no external libraries
+- Easy to use
 - Works on both Windows and Linux
 
 ## Dependencies
