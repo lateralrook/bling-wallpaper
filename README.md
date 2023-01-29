@@ -9,8 +9,8 @@ The script requires the following packages to be installed:
 
 ## Usage
 1. Clone this repository to your local machine
-2. Edit both of the scripts to change the "image_dir" variable to the directory of the images.
-3. Run `python wallpaperdl.py` to download the wallpapers for the last 5 days
+2. Run `python wallpaperdl.py` to download the wallpapers for the last 5 days
+3. Edit `setwallpaper.py` to change the "image_dir" variable to the directory of the images. 
 4. Run `python setwallpaper.py` to set the most recent wallpaper as your desktop background
 5. Optionally, use Task Scheduler (Windows) to run this script daily
 
