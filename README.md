@@ -5,6 +5,7 @@ A simple script to download the daily Bing wallpapers and set the most recent on
 The script requires the following packages to be installed:
 - requests
 - Pillow
+- py-wallpaper
 
 ## Usage
 1. Clone this repository to your local machine
