@@ -1,35 +1,17 @@
-# Bing Daily Wallpaper Downloader
+# Bing Wallpaper Downloader & Setter
+A simple script to download the daily Bing wallpapers and set the most recent one as your desktop background.
 
-This is a simple Python script that downloads the Bing's daily wallpapers from the last 5 days. The script uses the Bing Image Search API to fetch the JSON data of the wallpapers and then it downloads the images and saves them locally with the date as the filename.
+## Dependencies
+The script requires the following packages to be installed:
+- requests
+- Pillow
 
-## How to use
+## Usage
+1. Clone this repository to your local machine
+2. Edit both of the scripts to change the "image_dir" variable to the directory of the images.
+3. Run `python wallpaperdl.py` to download the wallpapers for the last 5 days
+4. Run `python setwallpaper.py` to set the most recent wallpaper as your desktop background
+5. Optionally, use Task Scheduler (Windows) to run this script daily
 
-1.  Clone or download this repository
-2.  Run the `wallpaper.py` script
-
-
-```
-python wallpaper.py
-```
-3.  The wallpapers will be saved in the same directory as the script with the date as the file name.
-
-## Features
-
-- Downloads the highest quality images available
-- Downloads the daily wallpapers from the last 5 days
-- Saves the images with the date as the file name
-- Easy to use and require no external libraries
-- Works on both Windows and Linux
-
-## Requirements
-
-- Python 3
-  - `requests`
-  - `Pillow`
-- Internet connection
-
-## Note
-
-This script is intended for personal use only. Please respect the copyright of the images and do not use them for commercial purposes without obtaining proper permission.
-
-Feel free to fork, modify and distribute this script. If you have any suggestions or improvements, please open an issue or submit a pull request.
+## Motivation
+The default Bing wallpaper application adds a watermark over the images, which is both slow and annoying. This script was created as a solution to this problem.
