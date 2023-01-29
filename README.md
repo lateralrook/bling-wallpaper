@@ -1,4 +1,4 @@
-# Bing Wallpaper Downloader & Setter
+# Bling Wallpaper Downloader & Setter
 A simple script to download the daily Bing wallpapers and set the most recent one as your desktop background.
 
 ## Dependencies
